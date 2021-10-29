@@ -14,18 +14,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `antispam`
---
-
-CREATE TABLE `antispam` (
-  `id` int(11) NOT NULL,
-  `userid` varchar(50) NOT NULL,
-  `last_checked_on` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `global_checker_stats`
 --
 
