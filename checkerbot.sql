@@ -14,18 +14,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `antispam`
---
-
-CREATE TABLE `antispam` (
-  `id` int(11) NOT NULL,
-  `userid` varchar(50) NOT NULL,
-  `last_checked_on` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `global_checker_stats`
 --
 
@@ -61,36 +49,3 @@ CREATE TABLE `users` (
   `total_cvv` varchar(50) NOT NULL,
   `total_ccn` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `antispam`
---
-ALTER TABLE `antispam`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `antispam`
---
-ALTER TABLE `antispam`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
-COMMIT;
